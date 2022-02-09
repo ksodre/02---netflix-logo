@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 100vh;
+}
+
+div{
+    background: red;
+    height: 250px;
+    width: 60px;
+    position: relative;
+}
+
+div::before{
+    background: red;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    content: '';
+    left: 90px;
+}
+
+div::after{
+    background: black;
+    height: 20px;
+    width: 175px;
+    position: absolute;
+    content: '';
+    left: -15px;
+    bottom: -10px;
+    border-radius: 50%;
+}
+
+span{
+    background: red;
+    height: 250px;
+    width: 60px;
+    position: absolute;
+    left: 46px;
+    transform: skew(20deg);
+    box-shadow: 0 0 10px -4px;
+}
