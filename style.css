@@ -11,6 +11,12 @@ div{
     height: 250px;
     width: 60px;
     position: relative;
+}    
+
+div:hover {
+    transition: 1s all;
+	cursor: pointer;
+    transform: scale(1.2);
 }
 
 div::before{
